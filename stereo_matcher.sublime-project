@@ -1,0 +1,25 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[   
+				"mpic++",
+				"StereoMatcher.cpp",
+				"-o",
+				"StereoMatcher",
+				"-lOpenCL",
+				"-fopenmp"
+			],
+			"file_regex": "^(..[^:]*):(.*)$",
+			"name": "StereoMatcher",
+			"working_dir": "${project_path}/"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
